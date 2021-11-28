@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES3",
+    "module": "esnext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "allowJs": true,
+    "outDir": "./dist/js",
+    "noEmitOnError": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ],
+  "extensions": [
+    ".tsx",
+    ".ts",
+    ".js"
+  ]
+}
