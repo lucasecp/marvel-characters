@@ -7,12 +7,14 @@ import Desktop from "./Desktop";
 interface DefaultLayoutProps {}
 
 const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
-  const [isMobile, setIsMobile] = useState<Boolean>();
+  const [isMobile, setIsMobile] = useState<Boolean>(
+    window.matchMedia("(max-width: 767px)").matches
+  );
 
-  const matches = window.matchMedia("(max-width: 767px)").matches;
-
-  window.addEventListener("resize", () => setIsMobile(matches));
-
+  window.addEventListener("resize", () =>
+    setIsMobile(window.matchMedia("(max-width: 767px)").matches)
+  );
+  
   return (
     <Container>
       {isMobile ? (

@@ -13,7 +13,7 @@ const Menu: React.FC<any> = () => {
             <NavLink to='#'>Tv Shows</NavLink>
             <NavLink to='#'>Games</NavLink>
             <NavLink to='#'>News</NavLink>
-            <NavLink to='#'>More</NavLink>
+            <NavLink to='#'>More</NavLink> 
         </Container>
     );
 };

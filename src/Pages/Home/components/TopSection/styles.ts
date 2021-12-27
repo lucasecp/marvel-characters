@@ -12,23 +12,30 @@ export const TextGroup = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 0 20px;
   > p,
   h1 {
     color: #fff;
     text-align:center;
     font-size: 44px;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'RobotoCondensed' sans-serif;
   }
   >p{
-      margin-top: 5px;
+      margin-top: 10px;
       font-size: 16px;
       font-family: 'Roboto' sans-serif;
+  }
+  @media(max-width: 767px){
+    > h1{
+      font-size: 26px;
+    }
   }
 
 `
 export const Figure = styled.figure`
   height: 400px;
-  max-width:1930px;
+  /* max-width:1930px; */
   width: 100%;
 
   > div {
@@ -37,7 +44,8 @@ export const Figure = styled.figure`
       background-repeat: no-repeat;
       height: 100%;
       width: 100%;
-     
+      background-size: cover;
+      
   }
 
   @media (max-width: 767px) {
