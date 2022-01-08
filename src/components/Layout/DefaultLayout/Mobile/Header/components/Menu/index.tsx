@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useMenu } from "src/context1/useMenu";
+import { useMenu } from "src/context/useMenu";
 import { Container } from "./styles";
 import { ReactComponent as CloseIcon } from "../../../../../../../assets/icons/close.svg";
 import { ReactComponent as ArrowRightIcon } from "../../../../../../../assets/icons/arrow-right-menu.svg";

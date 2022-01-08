@@ -1,6 +1,6 @@
 import { Router } from "./routes";
 import { GlobalStyle } from "./styles/global";
-import { MenuProvider } from './context1/useMenu';
+import { MenuProvider } from './context/useMenu';
 
 function App() {
   return (
