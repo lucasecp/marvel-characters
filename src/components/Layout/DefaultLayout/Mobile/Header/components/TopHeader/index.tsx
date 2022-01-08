@@ -3,7 +3,7 @@ import { Container } from "./styles";
 import { ReactComponent as LogoIcon } from "../../../../../../../assets/icons/logoM.svg";
 import { ReactComponent as MagnifyingGlassIcon } from "../../../../../../../assets/icons/magnifying-glass.svg";
 import { ReactComponent as HamburgerIcon } from "../../../../../../../assets/icons/hamburger.svg";
-import { useMenu } from "src/context/useMenu";
+import { useMenu } from "src/context1/useMenu";
 
 const TopHeader: React.FC<any> = () => {
   const { openMenu } = useMenu();
