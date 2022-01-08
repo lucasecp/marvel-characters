@@ -1,5 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.div`
-  
+interface ContainerProps {
+  headerHeight: number;
+}
+
+export const Container = styled.div<ContainerProps>`
+  padding-top: ${({headerHeight}) => headerHeight + 'px'}
+
 `;

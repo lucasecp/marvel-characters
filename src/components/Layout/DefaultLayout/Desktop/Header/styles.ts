@@ -1,8 +1,16 @@
 import { colors } from "src/styles/colors";
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
   background: ${colors.black.light};
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top:0;
+
 `;
 
 export const Content = styled.div`

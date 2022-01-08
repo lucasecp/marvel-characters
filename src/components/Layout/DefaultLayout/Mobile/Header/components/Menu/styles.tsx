@@ -12,6 +12,8 @@ export const Container = styled.aside<ContainerProps>`
   visibility: hidden;
   position: fixed;
   top: 0;
+  z-index: 10;
+
   > nav {
     position: fixed;
     left: -100%;
@@ -25,6 +27,7 @@ export const Container = styled.aside<ContainerProps>`
     max-height: 100vh;
     overflow-y: auto;
     align-items: flex-start;
+    z-index: 10;
     > span {
       fill: #fff;
       padding: 30px 20px;

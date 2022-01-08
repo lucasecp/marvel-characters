@@ -1,4 +1,4 @@
-import { MenuProvider } from "./Context/useMenu";
+import { MenuProvider } from "./context/useMenu";
 import { Router } from "./routes";
 import { GlobalStyle } from "./styles/global";
 

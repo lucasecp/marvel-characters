@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "./styles";
-import { ReactComponent as LogoIcon } from "../../../../../../../assets/icons/logo.svg";
+import { ReactComponent as LogoIcon } from "../../../../../../../assets/icons/logoM.svg";
 import { ReactComponent as MagnifyingGlassIcon } from "../../../../../../../assets/icons/magnifying-glass.svg";
 import { ReactComponent as HamburgerIcon } from "../../../../../../../assets/icons/hamburger.svg";
-import { useMenu } from "src/Context/useMenu";
+import { useMenu } from "src/context/useMenu";
 
 const TopHeader: React.FC<any> = () => {
   const { openMenu } = useMenu();
@@ -14,8 +14,9 @@ const TopHeader: React.FC<any> = () => {
         <span onClick={openMenu}>
           <HamburgerIcon />
         </span>
-
-        <LogoIcon />
+        <div>
+          <LogoIcon />
+        </div>
 
         <MagnifyingGlassIcon />
       </div>

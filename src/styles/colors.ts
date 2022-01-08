@@ -11,8 +11,8 @@ export const colors = {
 
   gray: {
     light: "#999999",
-    strong: "#151515",
-    middle: '#393939'
+    middle: '#bbb',
+    strong: '#393939'
   },
 
   white: {

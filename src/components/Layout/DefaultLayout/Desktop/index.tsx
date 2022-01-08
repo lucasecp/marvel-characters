@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import { Container } from "./styles";
-import Footer from './Footer';
+import Footer from "../shared/Footer";
 
 interface DesktopProps {}
 
 const Desktop: React.FC<DesktopProps> = ({ children }) => {
-  return <Container>
-      <Header/>
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  return (
+    <Container headerHeight={headerHeight}>
+      <Header setHeaderHeight={setHeaderHeight} />
       {children}
-      <Footer/>
-  </Container>;
+      <Footer />
+    </Container>
+  );
 };
 
 export default Desktop;

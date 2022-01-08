@@ -10,10 +10,13 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     max-width: ${spacings.container};
-    margin: 0 auto;
+    margin: 0 auto; 
     > span {
       fill: #fff;
       cursor: pointer;
+    }
+    > div{
+      width: 36px
     }
   }
 `;

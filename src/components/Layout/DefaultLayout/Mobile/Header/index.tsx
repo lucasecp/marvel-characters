@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import PromoContent from "src/components/PromoContent";
 import TopHeader from "./components/TopHeader";
 
 import { Container, Content } from "./styles";
 
-const Header: React.FC<any> = () => {
+interface HeaderProps {
+  setHeaderHeight: (height: number) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ setHeaderHeight }) => {
+  const header = useRef<HTMLHeadingElement>(null);
+
+
+  useEffect(() => {
+    if (header) {
+      setHeaderHeight(header.current?.offsetHeight || 0);
+    }
+  }, [header, setHeaderHeight]);
+
   return (
-    <Container>
-      <TopHeader />
+    <>
+      <Container  ref={header}>
+        <TopHeader />
+      </Container>
       <PromoContent>
         <Content>
           <h5>Join now</h5>
@@ -17,7 +32,7 @@ const Header: React.FC<any> = () => {
           ></img>
         </Content>
       </PromoContent>
-    </Container>
+    </>
   );
 };
 

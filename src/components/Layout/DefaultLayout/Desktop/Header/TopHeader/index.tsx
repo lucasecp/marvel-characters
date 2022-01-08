@@ -1,17 +1,18 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container,Logo } from "./styles";
 import { ReactComponent as LogoIcon } from "../../../../../../assets/icons/logo.svg";
+import { ReactComponent as LogoMIcon } from "../../../../../../assets/icons/logoM.svg";
 import { ReactComponent as MagnifyingGlassIcon } from "../../../../../../assets/icons/magnifying-glass.svg";
 
-const TopHeader: React.FC<any> = () => {
+const TopHeader: React.FC<any> = ({ isFixed }) => {
+  console.log(isFixed);
+  
   return (
     <Container>
       <div>
         <div>Lucas</div>
 
-        <div>
-          <LogoIcon />
-        </div>
+        <Logo logo={isFixed ? 'M' : 'Full'}>{isFixed ? <LogoMIcon /> : <LogoIcon />}</Logo>
 
         <div>
           <div>
